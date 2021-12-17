@@ -6,22 +6,23 @@
 #    By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/12/15 11:45:31 by rvan-aud          #+#    #+#              #
-#    Updated: 2021/12/15 16:02:22 by rvan-aud         ###   ########.fr        #
+#    Updated: 2021/12/17 16:08:49 by rvan-aud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS		=	main.cpp		\
 				ClapTrap.cpp	\
+				DiamondTrap.cpp	\
 				FragTrap.cpp	\
 				ScavTrap.cpp	\
 
-NAME		= ex02
+NAME		= ex03
 
 CXX			= clang++
 
 RM			= rm -f
 
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
+CXXFLAGS	= -Wall -Wextra -Werror -Wshadow -Wno-shadow -std=c++98
 
 OBJS		= $(SRCS:.cpp=.o)
 

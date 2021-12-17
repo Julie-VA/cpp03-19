@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 15:20:27 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/15 15:54:12 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/17 14:58:53 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,9 @@ ScavTrap::ScavTrap(std::string str) : ClapTrap(str)
 	this->_attackDamage = 20;
 }
 
-ScavTrap::ScavTrap(ScavTrap const &src)
+ScavTrap::ScavTrap(ScavTrap const &src) : ClapTrap(src)
 {
-	*this = src;
+	std::cout << "ScavTrap " << src._name << " copy constructor called" << std::endl;
 }
 
 ScavTrap::~ScavTrap(void)
@@ -40,10 +40,7 @@ ScavTrap::~ScavTrap(void)
 
 ScavTrap	&ScavTrap::operator=(ScavTrap const &rhs)
 {
-	this->_name = rhs._name;
-	this->_hitpoints = rhs._hitpoints;
-	this->_energyPoints = rhs._energyPoints;
-	this->_attackDamage = rhs._attackDamage;
+	ClapTrap::operator=(rhs);
 	return (*this);
 }
 

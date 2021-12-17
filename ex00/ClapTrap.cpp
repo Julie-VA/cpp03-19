@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 11:45:55 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/15 15:36:17 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/17 15:58:10 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 ClapTrap::ClapTrap(void) : _name("Default"), _hitpoints(10), _energyPoints(10), _attackDamage(0)
 {
-	std::cout << "Default constructor called" << std::endl;
+	std::cout << "Default ClapTrap constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string str) : _name(str), _hitpoints(10), _energyPoints(10), _attackDamage(0)
 {
-	std::cout << str << " constructor called" << std::endl;
+	std::cout << "ClapTrap " << str << " constructor called" << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap const &src)
@@ -29,7 +29,7 @@ ClapTrap::ClapTrap(ClapTrap const &src)
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << this->_name << " destructor called" << std::endl;
+	std::cout << "ClapTrap " << this->_name << " destructor called" << std::endl;
 }
 
 ClapTrap	&ClapTrap::operator=(ClapTrap const &rhs)

@@ -6,14 +6,14 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 15:56:42 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/15 16:18:28 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/17 13:10:33 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 #include "ClapTrap.hpp"
 
-class	FragTrap : public ClapTrap
+class	FragTrap : virtual public ClapTrap
 {
 	public:
 
