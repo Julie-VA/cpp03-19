@@ -6,7 +6,7 @@
 /*   By: rvan-aud <rvan-aud@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 11:45:48 by rvan-aud          #+#    #+#             */
-/*   Updated: 2021/12/17 17:18:38 by rvan-aud         ###   ########.fr       */
+/*   Updated: 2021/12/20 13:03:38 by rvan-aud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ int	main(void)
 	clappy.attack("Trappy");
 	trappy.takeDamage(0);
 	trappy.beRepaired(5);
-	std::cout << std::endl << "***ScavTrap tests***" << std::endl;
 
+	std::cout << std::endl << "***ScavTrap tests***" << std::endl;
 	scavy.attack("Trappy");
 	scavy.takeDamage(20);
 	scavy.beRepaired(15);
@@ -33,8 +33,8 @@ int	main(void)
 	clappy.attack("Scavy");
 	scavy.takeDamage(100);
 	scavy.guardGate();
-	std::cout << std::endl << "***FragTrap tests***" << std::endl;
 
+	std::cout << std::endl << "***FragTrap tests***" << std::endl;
 	fraggy.attack("Trappy");
 	fraggy.takeDamage(40);
 	fraggy.beRepaired(3);
@@ -42,8 +42,8 @@ int	main(void)
 	clappy.attack("Fraggy");
 	fraggy.takeDamage(100);
 	fraggy.highFivesGuys();
-	std::cout << std::endl << "***DiamondTrap tests***" << std::endl;
 
+	std::cout << std::endl << "***DiamondTrap tests***" << std::endl;
 	diammy.attack("Trappy");
 	diammy.takeDamage(30);
 	diammy.beRepaired(15);
